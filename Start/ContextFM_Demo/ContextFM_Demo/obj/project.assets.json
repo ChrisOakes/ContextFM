@@ -214,9 +214,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Demos\\ContextFM\\Start\\ContextFM_Demo\\ContextFM_Demo\\ContextFM_Demo.csproj",
-      "projectName": "ContextFM_Demo",
-      "projectPath": "C:\\Demos\\ContextFM\\Start\\ContextFM_Demo\\ContextFM_Demo\\ContextFM_Demo.csproj",
+      "projectUniqueName": "C:\\Demos\\ContextFM\\Start\\ContextFM_Demo\\ContextFM_Demo\\ContextFM.API.csproj",
+      "projectName": "ContextFM.API",
+      "projectPath": "C:\\Demos\\ContextFM\\Start\\ContextFM_Demo\\ContextFM_Demo\\ContextFM.API.csproj",
       "packagesPath": "C:\\Users\\coake\\.nuget\\packages\\",
       "outputPath": "C:\\Demos\\ContextFM\\Start\\ContextFM_Demo\\ContextFM_Demo\\obj\\",
       "projectStyle": "PackageReference",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d/KVk+RgXoi7VKk1eJ9TYQZeyVsStcSKCQ3P7o963cv8gFwYgVxXdlT1BNdPXNQlU0QWGvQ+yoSy0r868x/oWA==",
+  "dgSpecHash": "b87SfzDYBbX7cIFpmD8r/Q2ZFUcm/WeAc+XFVnTDm1z3hx3o4AYWL/kJ16Crvjfql8lTXXdZjYyYtTGXvL5zvA==",
   "success": true,
-  "projectFilePath": "C:\\Demos\\ContextFM\\Start\\ContextFM_Demo\\ContextFM_Demo\\ContextFM_Demo.csproj",
+  "projectFilePath": "C:\\Demos\\ContextFM\\Start\\ContextFM_Demo\\ContextFM_Demo\\ContextFM.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\coake\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\coake\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
