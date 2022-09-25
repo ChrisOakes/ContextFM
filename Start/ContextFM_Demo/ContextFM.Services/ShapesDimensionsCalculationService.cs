@@ -5,7 +5,7 @@
         //Square
         public decimal CalculateAreaSquare(decimal length)
         {
-            decimal area = 0;
+            decimal area;
 
             area = Convert.ToDecimal(Math.Pow(Convert.ToDouble(length), 2));
 
@@ -15,7 +15,7 @@
         //Square
         public decimal CalculatePerimeterSquare(decimal length)
         {
-            decimal perimeter = 0;
+            decimal perimeter;
 
             perimeter = 4 * (length);
 
@@ -25,7 +25,7 @@
         //Circle
         public decimal CalculateAreaCircle(decimal radius)
         {
-            decimal area = 0;
+            decimal area;
 
             area = Convert.ToDecimal(Math.PI * Math.Pow( Convert.ToDouble(radius), 2));
 
@@ -35,7 +35,7 @@
         //Circle
         public decimal CalculatePerimeterCircle(decimal radius)
         {
-            decimal perimeter = 0;
+            decimal perimeter;
 
             perimeter = Convert.ToDecimal(2 * Math.PI * Convert.ToDouble(radius));
 
@@ -45,7 +45,7 @@
         //Triangle
         public decimal CalculateAreaTriangle(decimal breadth, decimal height)
         {
-            decimal area = 0;
+            decimal area;
 
             area = (breadth * height) / 2;
 
@@ -55,7 +55,7 @@
         //Triangle
         public decimal CalculatePerimeterTriangle(decimal sideA, decimal sideB, decimal sideC)
         {
-            decimal perimeter = 0;
+            decimal perimeter;
 
             perimeter = sideA + sideB + sideC;
 
