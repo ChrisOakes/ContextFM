@@ -15,12 +15,12 @@ namespace ContextFM.API.Controllers
             ShapesDimensionsCalculationService = new ShapesDimensionsCalculationService();
         }
 
-        [HttpGet("/CircleArea/{radius}")]
-        public async Task<IActionResult> CalculateCircleArea(decimal radius)
+        [HttpGet("/AreaCircle/{radius}")]
+        public async Task<IActionResult> CalculateAreaCircle(decimal radius)
         {
             try
             {
-                var area = ShapesDimensionsCalculationService.CalculateArea(radius);
+                var area = ShapesDimensionsCalculationService.CalculateAreaCircle(radius);
 
                 return Ok($"{area} cm squared");
             }
@@ -30,12 +30,12 @@ namespace ContextFM.API.Controllers
             }
         }
 
-        [HttpGet("/CirclePerimeter/{radius}")]
-        public async Task<IActionResult> CalculateCirclePerimeter(decimal radius)
+        [HttpGet("/PerimeterCircle/{radius}")]
+        public async Task<IActionResult> CalculatePerimeterCircle(decimal radius)
         {
             try
             {
-                var perimeter = ShapesDimensionsCalculationService.CalculatePerimeter(radius);
+                var perimeter = ShapesDimensionsCalculationService.CalculatePerimeterCircle(radius);
 
                 return Ok($"{perimeter} cm");
             }
@@ -45,8 +45,8 @@ namespace ContextFM.API.Controllers
             }
         }
 
-        [HttpGet("/TriangleArea/{breadth}/{height}")]
-        public async Task<IActionResult> CalculateTriangleArea(decimal breadth, decimal height)
+        [HttpGet("/AreaTriangle/{breadth}/{height}")]
+        public async Task<IActionResult> CalculateAreaTriangle(decimal breadth, decimal height)
         {
             try
             {
@@ -60,12 +60,12 @@ namespace ContextFM.API.Controllers
             }
         }
 
-        [HttpGet("/TrianglePerimeter/{sideA}/{sideB}/{sideC}")]
-        public async Task<IActionResult> CalculateTrianglePerimeter(decimal sideA, decimal sideB, decimal sideC)
+        [HttpGet("/PerimeterTriangle/{sideA}/{sideB}/{sideC}")]
+        public async Task<IActionResult> CalculatePerimeterTriangle(decimal sideA, decimal sideB, decimal sideC)
         {
             try
             {
-                var perimeter = ShapesDimensionsCalculationService.CalculatePerimeter(sideA, sideB, sideC);
+                var perimeter = ShapesDimensionsCalculationService.CalculatePerimeterTriangle(sideA, sideB, sideC);
 
                 return Ok($"{perimeter} cm");
             }
@@ -75,12 +75,12 @@ namespace ContextFM.API.Controllers
             }
         }
 
-        [HttpGet("/SquareArea/{breadth}/{height}")]
-        public async Task<IActionResult> CalculateSquareArea(decimal breadth, decimal height)
+        [HttpGet("/AreaSquare/{length}")]
+        public async Task<IActionResult> CalculateAreaSquare(decimal length)
         {
             try
             {
-                var area = ShapesDimensionsCalculationService.CalculateAreaTriangle(breadth, height);
+                var area = ShapesDimensionsCalculationService.CalculateAreaSquare(length);
 
                 return Ok($"{area} cm squared");
             }
@@ -90,12 +90,12 @@ namespace ContextFM.API.Controllers
             }
         }
 
-        [HttpGet("/SquarePerimeter/{breadth}/{height}")]
-        public async Task<IActionResult> CalculateSquarePerimeter(decimal breadth, decimal height)
+        [HttpGet("/PerimeterSquare/{length}")]
+        public async Task<IActionResult> CalculatePerimeterSquare(decimal length)
         {
             try
             {
-                var perimeter = ShapesDimensionsCalculationService.CalculatePerimeter(breadth, height);
+                var perimeter = ShapesDimensionsCalculationService.CalculatePerimeterSquare(length);
 
                 return Ok($"{perimeter} cm");
             }

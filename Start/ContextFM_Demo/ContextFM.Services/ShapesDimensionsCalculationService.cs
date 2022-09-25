@@ -3,27 +3,27 @@
     public class ShapesDimensionsCalculationService
     {
         //Square
-        public decimal CalculateAreaSquare(decimal breadth, decimal height)
+        public decimal CalculateAreaSquare(decimal length)
         {
             decimal area = 0;
 
-            area = breadth * height;
+            area = Convert.ToDecimal(Math.Pow(Convert.ToDouble(length), 2));
 
             return area;
         }
 
         //Square
-        public decimal CalculatePerimeter(decimal breadth, decimal height)
+        public decimal CalculatePerimeterSquare(decimal length)
         {
             decimal perimeter = 0;
 
-            perimeter = 2 * (breadth) + 2 * (height);
+            perimeter = 4 * (length);
 
             return perimeter;
         }
 
         //Circle
-        public decimal CalculateArea(decimal radius)
+        public decimal CalculateAreaCircle(decimal radius)
         {
             decimal area = 0;
 
@@ -33,7 +33,7 @@
         }
 
         //Circle
-        public decimal CalculatePerimeter(decimal radius)
+        public decimal CalculatePerimeterCircle(decimal radius)
         {
             decimal perimeter = 0;
 
@@ -53,7 +53,7 @@
         }
 
         //Triangle
-        public decimal CalculatePerimeter(decimal sideA, decimal sideB, decimal sideC)
+        public decimal CalculatePerimeterTriangle(decimal sideA, decimal sideB, decimal sideC)
         {
             decimal perimeter = 0;
 
