@@ -1,6 +1,6 @@
 ﻿namespace ContextFM.Services
 {
-    public class ShapesCalculationService
+    public class ShapesDimensionsCalculationService
     {
         //Square
         public decimal CalculateAreaSquare(decimal breadth, decimal height)
@@ -27,7 +27,7 @@
         {
             decimal area = 0;
 
-            area = Convert.ToDecimal(Math.Pow(Math.PI * Convert.ToDouble(radius), 2));
+            area = Convert.ToDecimal(Math.PI * Math.Pow( Convert.ToDouble(radius), 2));
 
             return area;
         }

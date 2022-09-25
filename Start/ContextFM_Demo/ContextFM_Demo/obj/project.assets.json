@@ -72,6 +72,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "ContextFM.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ContextFM.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ContextFM.Services.dll": {}
+        }
       }
     }
   },
@@ -200,10 +210,16 @@
         "swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "ContextFM.Services/1.0.0": {
+      "type": "project",
+      "path": "../ContextFM.Services/ContextFM.Services.csproj",
+      "msbuildProject": "../ContextFM.Services/ContextFM.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "ContextFM.Services >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -238,7 +254,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Demos\\ContextFM\\Start\\ContextFM_Demo\\ContextFM.Services\\ContextFM.Services.csproj": {
+              "projectPath": "C:\\Demos\\ContextFM\\Start\\ContextFM_Demo\\ContextFM.Services\\ContextFM.Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
