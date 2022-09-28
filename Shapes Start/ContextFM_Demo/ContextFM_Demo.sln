@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContextFM.API", "ContextFM_Demo\ContextFM.API.csproj", "{8D2B98DE-68C3-4F7C-9978-3D19190BECAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContextFM_Demo", "ContextFM_Demo\ContextFM_Demo.csproj", "{8D2B98DE-68C3-4F7C-9978-3D19190BECAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContextFM.Models", "ContextFM.Models\ContextFM.Models.csproj", "{FA52EF52-BFAF-4B0B-9856-EC08D67319E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContextFM.Models", "ContextFM.Models\ContextFM.Models.csproj", "{FA52EF52-BFAF-4B0B-9856-EC08D67319E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContextFM.Interfaces", "ContextFM.Interfaces\ContextFM.Interfaces.csproj", "{12ACF126-7D8A-44E8-A92C-952ADA8FDF65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContextFM.Interfaces", "ContextFM.Interfaces\ContextFM.Interfaces.csproj", "{12ACF126-7D8A-44E8-A92C-952ADA8FDF65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContextFM.Services", "ContextFM.Services\ContextFM.Services.csproj", "{F017335A-5BAC-41D7-BBD5-4CC52498294F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContextFM.Services", "ContextFM.Services\ContextFM.Services.csproj", "{F017335A-5BAC-41D7-BBD5-4CC52498294F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContextFM.Dtos", "ContextFM.Dtos\ContextFM.Dtos.csproj", "{8CBCA10D-7853-4170-A45C-C87D02358D62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContextFM.Dtos", "ContextFM.Dtos\ContextFM.Dtos.csproj", "{8CBCA10D-7853-4170-A45C-C87D02358D62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContextFM.Common", "ContextFM.Common\ContextFM.Common.csproj", "{2A5F531E-4B8A-4C3E-8FF4-AE5340F61AB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContextFM.Common", "ContextFM.Common\ContextFM.Common.csproj", "{2A5F531E-4B8A-4C3E-8FF4-AE5340F61AB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
