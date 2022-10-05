@@ -1,4 +1,4 @@
-﻿namespace ContextFM.Services
+﻿namespace ShapesFM.Services
 {
     public class ShapesDimensionsCalculationService
     {

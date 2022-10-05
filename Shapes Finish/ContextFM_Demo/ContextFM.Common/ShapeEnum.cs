@@ -1,4 +1,4 @@
-﻿namespace ContextFM.Common
+﻿namespace ShapesFM.Common
 {
     public enum ShapeEnum
     {

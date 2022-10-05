@@ -5,15 +5,15 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContextFM_Demo", "ContextFM_Demo\ContextFM_Demo.csproj", "{8D2B98DE-68C3-4F7C-9978-3D19190BECAD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContextFM.Models", "ContextFM.Models\ContextFM.Models.csproj", "{FA52EF52-BFAF-4B0B-9856-EC08D67319E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShapesFM.Models", "ContextFM.Models\ShapesFM.Models.csproj", "{FA52EF52-BFAF-4B0B-9856-EC08D67319E0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContextFM.Interfaces", "ContextFM.Interfaces\ContextFM.Interfaces.csproj", "{12ACF126-7D8A-44E8-A92C-952ADA8FDF65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShapesFM.Interfaces", "ContextFM.Interfaces\ShapesFM.Interfaces.csproj", "{12ACF126-7D8A-44E8-A92C-952ADA8FDF65}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContextFM.Services", "ContextFM.Services\ContextFM.Services.csproj", "{F017335A-5BAC-41D7-BBD5-4CC52498294F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShapesFM.Services", "ContextFM.Services\ShapesFM.Services.csproj", "{F017335A-5BAC-41D7-BBD5-4CC52498294F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContextFM.Dtos", "ContextFM.Dtos\ContextFM.Dtos.csproj", "{0B9A6D3F-BDB5-4A72-A76E-68F628B3673F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShapesFM.Dtos", "ContextFM.Dtos\ShapesFM.Dtos.csproj", "{0B9A6D3F-BDB5-4A72-A76E-68F628B3673F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContextFM.Common", "ContextFM.Common\ContextFM.Common.csproj", "{018242ED-FCEF-48D8-9EFC-2E063880520D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShapesFM.Common", "ContextFM.Common\ShapesFM.Common.csproj", "{018242ED-FCEF-48D8-9EFC-2E063880520D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

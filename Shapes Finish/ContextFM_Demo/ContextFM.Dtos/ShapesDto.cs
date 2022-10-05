@@ -1,6 +1,6 @@
-﻿using ContextFM.Common;
+﻿using ShapesFM.Common;
 
-namespace ContextFM.Dtos
+namespace ShapesFM.Dtos
 {
     public class ShapesDto
     {

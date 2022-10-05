@@ -1,6 +1,6 @@
-﻿using ContextFM.Dtos;
+﻿using ShapesFM.Dtos;
 
-namespace ContextFM.Interfaces
+namespace ShapesFM.Interfaces
 {
     public interface IShapeCalculationService
     {

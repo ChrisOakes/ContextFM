@@ -1,7 +1,7 @@
-﻿using ContextFM.Common;
-using ContextFM.Interfaces;
+﻿using ShapesFM.Common;
+using ShapesFM.Interfaces;
 
-namespace ContextFM.Services
+namespace ShapesFM.Services
 {
     public class ShapeFactoryService : IShapeFactoryService
     {
