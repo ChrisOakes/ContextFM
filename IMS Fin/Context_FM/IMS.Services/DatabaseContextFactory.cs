@@ -14,8 +14,8 @@ namespace IMS.Services
             _serviceProvider = serviceProvider;
         }
 
-        public InventoryDatabaseContext CreateDatabaseContext(Guid DatabaseInstance)
-            => DatabaseInstance.ToString().ToLower() switch
+        public InventoryDatabaseContext CreateDatabaseContext(Guid customerInstance)
+            => customerInstance.ToString().ToLower() switch
         {
             "b8f85ea1-092d-45fb-9ec4-6a87820917d1" => (InventoryDatabaseContext)_serviceProvider.GetService(typeof(MapleWarehouseContext)),
             "43d8ed23-41eb-462d-ac31-ed92ed114944" => (InventoryDatabaseContext)_serviceProvider.GetService(typeof(PorterInventorySolutionsContext)),

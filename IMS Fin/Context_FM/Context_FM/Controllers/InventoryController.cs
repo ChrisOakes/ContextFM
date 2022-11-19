@@ -22,7 +22,7 @@ namespace Context_FM.Controllers
             {
                 inventory = await _inventoryService.AddInventoryAsync(inventory, customer);
 
-                return CreatedAtAction(nameof(GetById), new { id = inventory.Id, customer = customer });
+                return CreatedAtAction(nameof(GetById), new { id = inventory.Id, customer = customer}, inventory);
             }
             catch (Exception ex)
             {
