@@ -1,4 +1,5 @@
-﻿using IMS.Interfaces;
+﻿using IMS.Data;
+using IMS.Interfaces;
 using IMS.Models;
 using Microsoft.EntityFrameworkCore;
 

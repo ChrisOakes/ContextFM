@@ -1,4 +1,5 @@
 using IMS.Data;
+using IMS.Data.Implementations;
 using IMS.Interfaces;
 using IMS.Services;
 using Microsoft.EntityFrameworkCore;
@@ -15,8 +16,13 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IInventoryService, InventoryService>();
+builder.Services.AddScoped<IDatabaseContextFactory, DatabaseContextFactory>();
 
-builder.Services.AddDbContext<InventoryManagementContext>(options => options.UseSqlServer(config.GetConnectionString("IMSContext")));
+//builder.Services.AddDbContext<InventoryManagementContext>(options => options.UseSqlServer(config.GetConnectionString("IMSContext")));
+
+builder.Services.AddDbContext<WhetherlyStockContext>(options => options.UseSqlServer(config.GetConnectionString("WhetherlyStockContext")));
+builder.Services.AddDbContext<PorterInventorySolutionsContext>(options => options.UseSqlServer(config.GetConnectionString("PorterInventorySolutionsContext")));
+builder.Services.AddDbContext<MapleWarehouseContext>(options => options.UseSqlServer(config.GetConnectionString("MapleWarehouseContext")));
 
 var app = builder.Build();
 
