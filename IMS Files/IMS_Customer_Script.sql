@@ -312,3 +312,44 @@ USE [master]
 GO
 ALTER DATABASE [WhetherlyStock] SET  READ_WRITE 
 GO
+
+
+------------------------Data Insert--------------------------
+USE [MapleWarehouse]
+GO
+SET IDENTITY_INSERT [dbo].[Inventory] ON 
+GO
+INSERT [dbo].[Inventory] ([Id], [Name], [Description], [StockCount], [CostPrice], [SalePrice], [Created], [LastUpdated]) VALUES (1, N'HB Pencil', N'Lead pencil for writing', 1000, CAST(0.50 AS Decimal(18, 2)), CAST(1.00 AS Decimal(18, 2)), CAST(N'2023-01-03T00:00:00.0000000' AS DateTime2), CAST(N'2023-01-04T21:04:32.4851948' AS DateTime2))
+GO
+INSERT [dbo].[Inventory] ([Id], [Name], [Description], [StockCount], [CostPrice], [SalePrice], [Created], [LastUpdated]) VALUES (2, N'Ballpoint pen', N'Ballpoint writing', 150, CAST(0.75 AS Decimal(18, 2)), CAST(1.25 AS Decimal(18, 2)), CAST(N'2023-01-03T00:00:00.0000000' AS DateTime2), CAST(N'2023-01-03T00:00:00.0000000' AS DateTime2))
+GO
+INSERT [dbo].[Inventory] ([Id], [Name], [Description], [StockCount], [CostPrice], [SalePrice], [Created], [LastUpdated]) VALUES (3, N'Ruler', N'Measuring tool', 50, CAST(0.35 AS Decimal(18, 2)), CAST(1.00 AS Decimal(18, 2)), CAST(N'2023-01-03T00:00:00.0000000' AS DateTime2), CAST(N'2023-01-03T00:00:00.0000000' AS DateTime2))
+GO
+SET IDENTITY_INSERT [dbo].[Inventory] OFF
+GO
+
+USE [PorterInventorySolutions]
+GO
+SET IDENTITY_INSERT [dbo].[Inventory] ON 
+GO
+INSERT [dbo].[Inventory] ([Id], [Name], [Description], [StockCount], [CostPrice], [SalePrice], [Created], [LastUpdated]) VALUES (1, N'A4 Paper', N'Deluxe A4 paper', 1000, CAST(0.08 AS Decimal(18, 2)), CAST(0.15 AS Decimal(18, 2)), CAST(N'2023-01-04T07:50:36.3800000' AS DateTime2), CAST(N'2023-01-04T07:52:21.3245323' AS DateTime2))
+GO
+INSERT [dbo].[Inventory] ([Id], [Name], [Description], [StockCount], [CostPrice], [SalePrice], [Created], [LastUpdated]) VALUES (2, N'A3 Paper', N'Plain A3 paper', 1050, CAST(0.07 AS Decimal(18, 2)), CAST(0.12 AS Decimal(18, 2)), CAST(N'2023-01-03T00:00:00.0000000' AS DateTime2), CAST(N'2023-01-03T00:00:00.0000000' AS DateTime2))
+GO
+INSERT [dbo].[Inventory] ([Id], [Name], [Description], [StockCount], [CostPrice], [SalePrice], [Created], [LastUpdated]) VALUES (3, N'A2 Paper', N'Plain A2 paper', 850, CAST(0.09 AS Decimal(18, 2)), CAST(0.14 AS Decimal(18, 2)), CAST(N'2023-01-03T00:00:00.0000000' AS DateTime2), CAST(N'2023-01-03T00:00:00.0000000' AS DateTime2))
+GO
+SET IDENTITY_INSERT [dbo].[Inventory] OFF
+GO
+
+USE [WhetherlyStock]
+GO
+SET IDENTITY_INSERT [dbo].[Inventory] ON 
+GO
+INSERT [dbo].[Inventory] ([Id], [Name], [Description], [StockCount], [CostPrice], [SalePrice], [Created], [LastUpdated]) VALUES (1, N'Barometer', N'Measures atmospheric pressure', 50, CAST(25.00 AS Decimal(18, 2)), CAST(60.00 AS Decimal(18, 2)), CAST(N'2023-01-03T00:00:00.0000000' AS DateTime2), CAST(N'2023-01-04T21:07:35.1240570' AS DateTime2))
+GO
+INSERT [dbo].[Inventory] ([Id], [Name], [Description], [StockCount], [CostPrice], [SalePrice], [Created], [LastUpdated]) VALUES (2, N'Thermometer', N'Measures the temperature of liquid', 50, CAST(15.00 AS Decimal(18, 2)), CAST(40.00 AS Decimal(18, 2)), CAST(N'2023-01-03T00:00:00.0000000' AS DateTime2), CAST(N'2023-01-04T07:56:20.1702749' AS DateTime2))
+GO
+INSERT [dbo].[Inventory] ([Id], [Name], [Description], [StockCount], [CostPrice], [SalePrice], [Created], [LastUpdated]) VALUES (3, N'Anemometer', N'Measures wind speed', 150, CAST(40.00 AS Decimal(18, 2)), CAST(80.00 AS Decimal(18, 2)), CAST(N'2023-01-03T00:00:00.0000000' AS DateTime2), CAST(N'2023-01-03T00:00:00.0000000' AS DateTime2))
+GO
+SET IDENTITY_INSERT [dbo].[Inventory] OFF
+GO

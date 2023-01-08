@@ -34,6 +34,22 @@ namespace IMS.Services
             }
         }
 
+        public async Task<IEnumerable<Inventory>> GetInventoryAsync(Guid customer)
+        {
+            try
+            {
+                var context = _databaseContextFactory.CreateDatabaseContext(customer);
+
+                var totalInventory = await context.Inventory.ToListAsync();
+
+                return totalInventory;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+
         public async Task<Inventory> GetInventoryByIdAsync(int id, Guid customer)
         {
             try

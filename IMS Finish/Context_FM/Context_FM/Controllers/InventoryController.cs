@@ -15,6 +15,22 @@ namespace Context_FM.Controllers
             _inventoryService = inventoryService;
         }
 
+        [HttpGet("{customer}")]
+        public async Task<ActionResult<IEnumerable<Inventory>>> GetInventory(Guid customer)
+        {
+            try
+            {
+                var totalInventory = await _inventoryService.GetInventoryAsync(customer);
+
+                return Ok(totalInventory);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+
         [HttpPost("{customer}", Name = nameof(AddInventory))]
         public async Task<IActionResult> AddInventory([FromBody] Inventory inventory, Guid customer)
         {

@@ -4,6 +4,8 @@ namespace IMS.Interfaces
 {
     public interface IInventoryService
     {
+        Task<IEnumerable<Inventory>> GetInventoryAsync(Guid customer);
+
         Task<Inventory> AddInventoryAsync(Inventory inventory, Guid customer);
 
         Task UpdateInventoryAsync(Inventory inventory, Guid customer);
